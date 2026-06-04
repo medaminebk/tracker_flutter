@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "294430604784",
+    "firebase_url": "https://bsapi-28f95-default-rtdb.firebaseio.com",
+    "project_id": "bsapi-28f95",
+    "storage_bucket": "bsapi-28f95.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:294430604784:android:91b68c930794de0cb23135",
+        "android_client_info": {
+          "package_name": "com.example.mon_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwicDo1DvY1rKotKBfTiKl2yQRIzlPe4A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:294430604784:android:357a5204c8a590e9b23135",
+        "android_client_info": {
+          "package_name": "com.tracker.tracker_flutter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwicDo1DvY1rKotKBfTiKl2yQRIzlPe4A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
