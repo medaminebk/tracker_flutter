@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../../models/maintenance.dart';
 import '../../providers/maintenance_provider.dart';
 import '../../providers/maintenance_category_provider.dart';
 

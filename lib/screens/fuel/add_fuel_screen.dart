@@ -64,12 +64,12 @@ class _AddFuelScreenState extends ConsumerState<AddFuelScreen> {
               padding: const EdgeInsets.all(16.0),
               children: [
                 DropdownButtonFormField<Vehicle>(
-                  value: _selectedVehicle,
+                  initialValue: _selectedVehicle,
                   decoration: const InputDecoration(labelText: 'Vehicle'),
                   items: vehicles.map((v) {
                     return DropdownMenuItem(
                       value: v,
-                      child: Text(v.make + ' ' + v.model),
+                      child: Text('${v.brand} ${v.model}'),
                     );
                   }).toList(),
                   onChanged: (value) => setState(() => _selectedVehicle = value),
@@ -115,6 +115,7 @@ class _AddFuelScreenState extends ConsumerState<AddFuelScreen> {
                       );
 
                       await ref.read(fuelServiceProvider).addFuelEntry(fuelEntry);
+                      if (!context.mounted) return;
                       Navigator.pop(context);
                     }
                   },

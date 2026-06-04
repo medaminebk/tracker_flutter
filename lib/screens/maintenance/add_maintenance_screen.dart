@@ -74,7 +74,7 @@ class _AddMaintenanceScreenState extends ConsumerState<AddMaintenanceScreen> {
                   padding: const EdgeInsets.all(16.0),
                   children: [
                     DropdownButtonFormField<Vehicle>(
-                      value: _selectedVehicle,
+                      initialValue: _selectedVehicle,
                       decoration: const InputDecoration(labelText: 'Vehicle'),
                       items: vehicles.map((v) {
                         return DropdownMenuItem(
@@ -90,7 +90,7 @@ class _AddMaintenanceScreenState extends ConsumerState<AddMaintenanceScreen> {
                       onTap: () => _selectDate(context),
                     ),
                     DropdownButtonFormField<MaintenanceCategory>(
-                      value: _selectedCategory,
+                      initialValue: _selectedCategory,
                       decoration: const InputDecoration(labelText: 'Category'),
                       items: categories.map((c) {
                         return DropdownMenuItem(
@@ -129,7 +129,7 @@ class _AddMaintenanceScreenState extends ConsumerState<AddMaintenanceScreen> {
                           );
 
                           await ref.read(maintenanceServiceProvider).addMaintenance(maintenance);
-                          if (!mounted) return;
+                          if (!context.mounted) return;
                           Navigator.pop(context);
                         }
                       },

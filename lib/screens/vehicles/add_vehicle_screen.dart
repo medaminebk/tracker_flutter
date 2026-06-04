@@ -53,7 +53,7 @@ class _AddVehicleScreenState extends ConsumerState<AddVehicleScreen> {
                 validator: (value) => value!.isEmpty ? 'Please enter license plate' : null,
               ),
               DropdownButtonFormField<String>(
-                value: _selectedFuelType,
+                initialValue: _selectedFuelType,
                 decoration: const InputDecoration(labelText: 'Fuel Type'),
                 items: _fuelTypes.map((type) => DropdownMenuItem(value: type, child: Text(type))).toList(),
                 onChanged: (value) => setState(() => _selectedFuelType = value!),
