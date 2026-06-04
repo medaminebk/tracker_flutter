@@ -8,7 +8,7 @@ import 'package:tracker_flutter/screens/vehicle_list_screen.dart';
 import 'package:tracker_flutter/screens/add_vehicle_screen.dart';
 import 'package:tracker_flutter/screens/add_fuel_screen.dart';
 import 'package:tracker_flutter/screens/add_maintenance_screen.dart';
-import 'package:tracker_flutter/screens/dashboard_screen.dart';
+import 'package:tracker_flutter/screens/dashboard/dashboard_screen.dart';
 
 final goRouterProvider = Provider<GoRouter>((ref) {
   return GoRouter(
